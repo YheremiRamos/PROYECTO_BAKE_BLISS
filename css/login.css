@@ -1,1 +1,288 @@
 /*FATIMA URPI*/
+
+/* -------------------- SLIDES -------------------- */
+
+body {
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+
+body {
+	background-image: linear-gradient(100deg, #000000c7, #00000020),
+        url('../img/Principal/login.jpg');
+
+
+	height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: left;
+
+}
+
+h5{
+
+    text-align:left ;
+    margin-left: 30px;
+}
+
+.carrocel{
+    width: 98%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    position: absolute;
+    top: 1%; /* posiciona na metade da tela */
+    left: 1%; /* posiciona na metade da tela */
+    
+}
+
+.scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-right: 10px;
+}
+
+.quadrado-imagem{
+    background: rgb(205,209,208);
+    background: radial-gradient(circle, rgba(205,209,208,1) 0%, rgba(156,156,156,1) 71%, rgba(71,71,71,1) 100%);
+    height: 300px;
+    width: 400px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+/* -------------------- SLIDES -------------------- */
+
+/* -------------------- LOGIN -------------------- */
+.quadrado-login{
+  
+    margin-top: 8%;
+    background: #d2b495;
+    border-radius: 15px;
+    height: 30%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow:
+    0px 0.4px 3.3px rgba(0, 0, 0, 0.101),
+    0px 1.3px 11.2px rgba(0, 0, 0, 0.149),
+    0px 6px 50px rgba(0, 0, 0, 0.25)
+    ;
+
+    
+
+}
+
+.centraliza{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign{
+    font-size: larger;
+    font-weight: 700px;
+}
+
+
+
+
+
+
+
+
+.esquerda hr,
+.direita hr {
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    border: 1px solid #000; /* Puedes ajustar el color a tu preferencia */
+}
+
+
+
+
+
+
+
+
+.esquerda{
+    margin-top: 62px;
+    padding-left: 15px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.direita {
+    padding-left: 15px;
+    margin-top: 62px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+#ltxtname {
+    border-radius:  15px ;
+    background: rgb(226, 226, 226);
+    border: none;
+    width: 83%;
+    padding-left: 15px;
+    height: 24px;
+}
+
+#ltxtemail{
+    border-radius:  15px ;
+    background: rgb(226, 226, 226);
+    border: none;
+    width: 83%;
+    padding-left: 15px;
+    height: 24px;
+}
+
+#ltxtsenha{
+    border-radius:  15px ;
+    background: rgb(226, 226, 226);
+    border: none;
+    width: 83%;
+    padding-left: 15px;
+    height: 24px;
+}
+
+#rtxtname {
+    border-radius:  15px ;
+    background: rgb(226, 226, 226);
+    border: none;
+    width: 83%;
+    padding-left: 15px;
+    height: 24px;
+}
+
+#rtxtemail{
+    border-radius:  15px ;
+    background: rgb(226, 226, 226);
+    border: none;
+    width: 83%;
+    padding-left: 15px;
+    height: 24px;
+}
+
+#rtxtsenha{
+    border-radius:  15px ;
+    background: rgb(226, 226, 226);
+    border: none;
+    width: 83%;
+    padding-left: 15px;
+    height: 24px;
+}
+
+#rtxtconfirmsenha {
+    border-radius:  15px ;
+    background: rgb(226, 226, 226);
+    border: none;
+    width: 83%;
+    padding-left: 15px;
+    height: 24px;
+}
+
+.btnlogin{
+    background: rgb(92, 46, 219);
+    border-radius: 0px 15px ;
+    border: none;
+    height: 30px;
+    width: 50%;
+    color: white;
+}
+
+.forgot{
+    border: none;
+    background: none;
+    font-size: 12px;
+}
+
+
+.transicao {
+    color: white;
+    background: rgb(92, 46, 219);
+    border-radius: 0px 15px 15px 0px;
+    width: 90%;
+    text-align: center;
+    font-size: smaller;
+    position: relative;
+    bottom: 0PX;
+    height: 617px;
+    padding-left: 35px;
+    padding-right: 20px;
+
+    margin-top: -613px;
+}
+
+.hello {
+    margin-top: 30%;
+}
+
+.signup{
+    border-radius: 0px 15px ;
+    width: 50%;
+    border: white 1px solid;
+    background: whitesmoke;
+    color: white;
+    background: transparent;
+    margin-top: 10px;
+}
+
+.quadrado-login {
+    /* Establece una transición para los cambios de tamaño */
+    transition: width 0.5s ease;
+  }
+  
+  /* Añade una clase al cuadro de inicio de sesión cuando el botón "Sign In" se presiona */
+  .expandido {
+    width: 33%; /* Ancho completo para cubrir el formulario de registro */
+  }
+
+
+
+/* Animaciones */
+
+@keyframes go-back {
+    
+    from {
+        transform: translateX(225px);
+      
+        
+
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes go-front {
+    from {
+        transform: translateX(-225);
+
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* -------------------- LOGIN -------------------- */
+
+
+
+
+  
