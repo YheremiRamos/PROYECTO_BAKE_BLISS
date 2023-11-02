@@ -251,7 +251,7 @@ h5{
   
   /* Añade una clase al cuadro de inicio de sesión cuando el botón "Sign In" se presiona */
   .expandido {
-    width: 33%; /* Ancho completo para cubrir el formulario de registro */
+    width: 30%; /* Ancho completo para cubrir el formulario de registro */
   }
 
 
