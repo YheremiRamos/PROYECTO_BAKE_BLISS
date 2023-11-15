@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* COLORES PARA LA PAGINA */
+:root {
+    --amarillo: #fa9112;
+    --marron: #4d2f2c;
+    --blanco: #fefeff;
+}
+
+
+
+
+/*animacionlogo-escala*/
+
+.logo:hover img {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+/*========================TAMAÑOS=====================================================*/
+
+.logo img {
+    width: 120px;
+    height: auto;
+
+}
+
+.user_img img,
+.primer .libro img {
+    width: 40px;
+    height: auto;
+}
+
+.primer img {
+    width: 100px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*=====================MENU==========================================*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.menu a,
+.menu p,
+footer a {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.logo {
+    margin: 5px;
+    
+}
+
+/*USER DIV*/
+.user p {
+    margin: 10px;
+    font-size: 20px;
+    color: var(--amarillo);
+}
+
+/*----------------*/
+
+/*SECCIONES*/
+.secciones a {
+    margin: 10px;
+    font-size: 22px;
+}
+/*------------*/
+
+.secciones a {
+    color: #000; 
+    padding: 10px 60px; 
+    border-radius: 15px;
+    background-color: transparent; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.secciones a:hover {
+    color: #fff; /* Cambia el color de la letra al pasar el mouse por encima */
+    background-color: var(--amarillo); /* Cambia el fondo a azul al pasar el mouse por encima */
+}
+
+
+
+/*=====================FOOTER==========================================*/
+footer{
+    background-color: #4d2f2c;
+    color: var(--blanco);
+
+}
+
+/*_________________*/
+.bajo{
+    display: flex;
+}
+
+.info{
+    margin: 20px 10px;
+    margin-right: 0;
+}
+iframe{
+    width: 500px;
+    height: 400px;
+   margin: 20px;
+   margin-left: 10px;
+}
+
+/*_DIV INFO*/
+
+.libro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.libro a{
+    margin: 10px;
+    font-size: 20px;
+}
+.primer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*siguenos - horario/direccion*/
+
+.segundo{
+    display: flex;
+    
+    flex-direction: row;
+}
+
+.siguenos, .horario{
+    margin: 30px;
+}
+
+.siguenos{
+    width: 500px;
+    height: auto;
+}
+
+.segundo h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*---------------*/
+
+
