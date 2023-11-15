@@ -101,7 +101,8 @@ html {
 
 .content-shopping-cart {
 	display: flex;
-	flex-direction: column;
+	font-size: 2.5ch;
+	align-items: center;
 }
 
 /* ************* NAVBAR ************* */
@@ -159,46 +160,6 @@ html {
 	color: #fff;
 }
 
-.search-form {
-	position: relative;
-	display: flex;
-	align-items: center;
-	border: 2px solid #fff;
-	border-radius: 2rem;
-	background-color: #fff;
-	height: 4.4rem;
-	overflow: hidden;
-}
-
-.search-form input {
-	outline: none;
-	font-family: inherit;
-	border: none;
-	width: 25rem;
-	font-size: 1.4rem;
-	padding: 0 2rem;
-	color: #777;
-	cursor: pointer;
-}
-
-.search-form input::-webkit-search-cancel-button {
-	appearance: none;
-}
-
-.search-form .btn-search {
-	border: none;
-	background-color: var(--primary-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	padding: 1rem;
-}
-
-.btn-search i {
-	font-size: 2rem;
-	color: #fff;
-}
 
 /* ********************************** */
 /*               BANNER               */
