@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/util.css">
+    <link rel="stylesheet" href="./css/pedido.css">
+
+
+   
+    <title>Pedido</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="menu">
+            <!-- logo -->
+            <div class="logo">
+
+                <a href="./paginaPrincipal.html">
+                    <img src="./img/general/LOGO1.png" alt="">
+                </a>
+
+            </div>
+            <!-- SECCIONES -->
+            <div class="secciones">
+                <ul>
+                    <a href="#">Tienda</a>
+                    <a href="#">Conócenos</a>
+                    <a href="#">Contacto</a>
+                </ul>
+            </div>
+            <!-- user -->
+            <div class="user">
+                <div class="user_img">
+                    <img src="./img/general/icon_user.png" alt="">
+                </div>
+
+                <div>
+                    <p>User</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ----------------------- -->
+
+    <main class="pedido">
+        <!-- ----TU PEDIDO------- -->
+        <div class="texto1">
+            <h3>TU PEDIDO</h3>
+
+        </div>
+
+        <!-- ---FORMUALARIO------- -->
+        <form id="formulario_pedido" name="formulario_pedido" class="formulario_pedido">
+            <!-- ----IMAGEN------- -->
+            <div>
+                <img src="./img/general/torta1.jpg" alt="selva_negra">
+            </div>
+            <!-- --- CAMPOS------ -->
+
+            <div class="campos">
+                  <!-- --- CAMPOS1------ -->
+                <div class="campos1">
+                    <div class="nom">
+                        
+                        <input type="text" id="nombreProducto" name="nombreProducto" value="Selva Negra" disabled><br>
+
+                    </div>
+
+
+                    <div class="cate_por">
+                        <input type="text" id="categoriaProducto" name="categoriaProducto" placeholder="Categoría"><br>
+
+
+                        <label for="porciones"> <strong>Porciones:</strong></label>
+                        <input type="number" id="porciones" name="porciones" min="1" value="0"><br>
+                    </div>
+
+                </div>
+  <!-- --- CAMPOS2------ -->
+                <div class="campos2">
+                    
+                        <div class="dedic">
+                            <textarea id="dedicatoria" name="dedicatoria" rows="4" cols="50" placeholder="Dedicatoria predeterminada"></textarea>                        </div>
+
+
+                        <div class="total">
+                            <p><strong>TOTAL A PAGAR:</strong></p>
+
+                            <input type="text" id="total" name="total" placeholder="S/."><br>
+
+                        </div>
+
+                    
+                </div>
+            </div>
+
+
+        </form>
+
+        <!-- ----BOTON------ -->
+        <div class="boton_pedido">
+            <button id="btncompletar">COMPLETAR PEDIDO</button>
+        </div>
+
+        <!--REPORTE-->
+        <section>
+            <div id="reporte" class="reporte">
+                <div class="contenido">
+                    <div class="contenido-texto"></div>
+    
+                    <div class="contenido-cerrar">
+                        <input type="button" id="btncerrar" name="btncerrar" value="CERRAR" class="boton" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ----------------------- -->
+
+
+
+    <footer>
+        <div class="bajo">
+
+            <div class="info">
+                <div class="primer">
+                    <div class="logo_f">
+                        <img src="./img/general/LOGO2.png" alt="">
+                    </div>
+
+                    <div class="libro">
+                        <img src="./img/general/book.png" alt="">
+                        <a href="#">Libro de Reclamaciones</a>
+                    </div>
+                </div>
+
+                <div class="segundo">
+                    <div class="siguenos">
+                        <h3>Síguenos</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>WhatsApp</li>
+                        </ul>
+                    </div>
+
+                    <div class="horario">
+                        <h3>Horario/Atención</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Dignissimos ut dolores
+                            perspiciatis quam ex corporis, officia,
+                            voluptas nulla quasi tempore necessitatibus
+                            cumque suscipit commodi rerum id labore,
+                            sequi soluta obcaecati.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7806.4756314733895!2d-77.07583346421895!3d-11.958029819743084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1699239710524!5m2!1ses-419!2spe"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+<script src="./js/pedido.js"></script>
+
+</html>
