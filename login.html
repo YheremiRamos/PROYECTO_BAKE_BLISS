@@ -8,27 +8,30 @@
     <title>BAKE BLISS</title>
   </head>
   <body>
-    
+ 
     <div class="centraliza">
       <div class="quadrado-login">
 
 
         <div class="esquerda" >
+
+       
+
           <section>
           <form id="frmficha" name="frmficha" class="frmIniciarSesion">
-
+            
         <p class="sign">INICIAR SESIÓN</p>
           <hr></hr>
           
           <h5>Correo Electronico:</h5>
-        <p><input type="email" name="lemail" id="ltxtemail" placeholder="usuario@gmail.com"/></p>
+        <p><input type="email" name="email" id="email" placeholder="usuario@gmail.com"/></p>
 
         <h5>Contraseña:</h5>
-        <p><input type="password" name="lsenha" id="ltxtsenha" placeholder="****"/></p>
+        <p><input type="password" name="contra" id="contra" placeholder="******"/></p>
 
-        <p class="fixforgot"><input class="forgot" type="button" value="Forgot your password?" onmousemove="trocar()" onmouseleave="trocar2()"></p>
+        <p class="forgot"><a id="enlace" href="#" onclick="abrirModal()">Olvidaste tu contraseña?</a></p>
 
-        <p><input class="btnlogin" type="button" value="Sign in" onclick=""></p>
+        <p><input class="btnlogin" id="btnIngresar" type="button" value="Ingresar" onclick=""></p>
 
       </section>
     </div>
@@ -48,34 +51,34 @@
               <form action="POST">
                   <div class="caja">
                       <h5>Nombres y apellidos:</h5>
-                      <p><input type="text" name="txtnombres"  id="rtxtname" maxlength="60" placeholder="Nombres..."
+                      <p><input type="text" name="nombres"  id="nomApe2" maxlength="60" placeholder="Nombres..."
                           required></p>
                   </div>
                  
                   <div class="caja">
                     <h5>Correo:</h5>
-                    <input type="email" name="txtcorreo" id="rtxtemail"maxlength="50"
+                    <input type="email" name="correo" id="email1"maxlength="40"
                           placeholder="usuario@gmail.com" required>
                   </div>
                   <div class="caja">
                     <h5>Teléfono:</h5>
-                      <input type="text"  name="txttelefono" id="rtxtsenha" placeholder="999 999 999" maxlength="15" required>
+                      <input type="text"  name="telefono" id="telefono" placeholder="999 999 999" maxlength="9" required>
                   </div>
 
                   <div class="caja">
                     <h5>Conrtraseña:</h5>
-                    <input type="password" name="rsenha" id="rtxtsenha" placeholder="Password" maxlength="15" required>
+                    <input type="password" name="contra" id="contra1" placeholder="Password" maxlength="15" required>
                 </div>
                 <div class="caja">
                   <h5>Confirmar contraseña:</h5>
-                  <input type="password"  name="rsenha" id="rtxtconfirmsenha" placeholder="Confirm Password" maxlength="15" required>
+                  <input type="password"  name="contra" id="confirContra1" placeholder="Confirm Password" maxlength="15" required>
               </div>
 
 
                 </form>
               </form>
 
-          <p><input class="btnlogin" type="button" value="Sign in" onclick=""></p>
+          <p><input class="btnlogin1" type="button" value="Registrarse" id="btnRegistro" onclick=""></p>
           
        
        
@@ -83,14 +86,49 @@
 
         <div></div>
         <div class="transicao">
-            <h1 class="hello">BIENVENIDO!</h1>
-            <p class="textobaixo">Introduce tus datos personales y comienza tu viaje con nosotros</p>
+            <h1 class="hello">¡Bienvenido a nuestra dulce comunidad!</h1>
+            <p class="textobaixo">Para seguir conectado con nosotros, registrate con tus datos personales</p>
             <p><input class="signup jogaesquerda" type="button" value="Registrarse" onclick="trocalado()"></p>
         </div>
         </section>
 
       </div>
+
+      
+ <!-- modal recupera contraseña-->
+
+ <div id="modalRecuperar" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <h2>Recuperar Contraseña</h2>
+
+    <div class="cajaRecu">
+      <h4>Correo:</h4>
+      <input type="email" name="emailRecuperar" id="emailRecuperarModal" placeholder="usuario@gmail.com" maxlength="20" required>
+    </div>
+    <div class="cajaRecu">
+      <h4>Nueva Contraseña:</h4>
+      <input type="password" name="contraseñaRecuperar" id="contraRecuperarModal" placeholder="****** " required>
+
+    </div>
+
+
+
+    <div class="cajaRecu">
+      <h4>Confirmar Contraseña:</h4>
+      <input type="password" name="confirmarRecuperar" id="ContraConfiRecuperarModal" placeholder="******" required>
+
+    </div>
+
+    <center><button id="btnRecuperar" onclick="recuperarContrasenaModal()">Recuperar Contraseña</button></center>
+  </div>
+</div>
+
+
+
+
     </div>
     <script src="js/login.js"></script>
+
   </body>
 </html>

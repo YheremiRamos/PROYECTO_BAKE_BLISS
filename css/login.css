@@ -2,6 +2,10 @@
 
 /* -------------------- SLIDES -------------------- */
 
+
+
+
+
 body {
 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,7 +29,9 @@ body {
 h5{
 
     text-align:left ;
-    margin-left: 30px;
+    margin-left: 25px;
+    font-size: 13.2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .carrocel{
@@ -70,7 +76,7 @@ h5{
 .quadrado-login{
   
     margin-top: 8%;
-    background: #d2b495;
+    background: #d8bda2;
     border-radius: 15px;
     height: 30%;
     width: 40%;
@@ -130,12 +136,22 @@ h5{
 
 .direita {
     padding-left: 15px;
-    margin-top: 62px;
+    margin-top: 50px;
     text-align: center;
     padding-right: 15px;
 }
 
-#ltxtname {
+
+
+
+.direita.sign{
+    margin-top: 10px;
+
+
+}
+
+
+#nomApe {
     border-radius:  15px ;
     background: rgb(226, 226, 226);
     border: none;
@@ -144,7 +160,12 @@ h5{
     height: 24px;
 }
 
-#ltxtemail{
+
+
+
+
+/*Lado izquierdo*/
+#nomApe2 {
     border-radius:  15px ;
     background: rgb(226, 226, 226);
     border: none;
@@ -153,7 +174,7 @@ h5{
     height: 24px;
 }
 
-#ltxtsenha{
+#email{
     border-radius:  15px ;
     background: rgb(226, 226, 226);
     border: none;
@@ -162,7 +183,16 @@ h5{
     height: 24px;
 }
 
-#rtxtname {
+
+#email1{
+    border-radius:  15px ;
+    background: rgb(226, 226, 226);
+    border: none;
+    width: 83%;
+    padding-left: 15px;
+    height: 24px;
+}
+#contra{
     border-radius:  15px ;
     background: rgb(226, 226, 226);
     border: none;
@@ -171,7 +201,7 @@ h5{
     height: 24px;
 }
 
-#rtxtemail{
+#contra1{
     border-radius:  15px ;
     background: rgb(226, 226, 226);
     border: none;
@@ -180,7 +210,8 @@ h5{
     height: 24px;
 }
 
-#rtxtsenha{
+
+#telefono{
     border-radius:  15px ;
     background: rgb(226, 226, 226);
     border: none;
@@ -189,7 +220,7 @@ h5{
     height: 24px;
 }
 
-#rtxtconfirmsenha {
+#confirContra1{
     border-radius:  15px ;
     background: rgb(226, 226, 226);
     border: none;
@@ -199,24 +230,63 @@ h5{
 }
 
 .btnlogin{
-    background: rgb(92, 46, 219);
+    background: rgb(139, 79, 19);
     border-radius: 0px 15px ;
     border: none;
     height: 30px;
     width: 50%;
     color: white;
+    transition: background-color 0.3s, transform 0.3s; /* Agregar la transición */
+
+
 }
 
-.forgot{
+.btnlogin:hover {
+    background: rgb(172, 106, 41);/* Cambia el color al pasar el mouse */
+    color: white;
+    transform: scale(1.1); /* Escala el texto */
+
+
+   
+}
+
+
+
+
+.btnlogin1{
+    background:rgb(139, 79, 19);;
+    border-radius: 0px 15px ;
     border: none;
-    background: none;
-    font-size: 12px;
+    height: 30px;
+    width: 50%;
+    color: white;
+
+    margin-top: 10px;
 }
 
+.btnlogin1:hover {
+    background: rgb(85, 68, 15);/* Cambia el color al pasar el mouse */
+    color: white;
+    transform: scale(1.2); /* Escala el texto */
+
+
+   
+}
+
+
+
+#enlace {
+    font-size: 15px;
+    color: rgb(139, 79, 19); /* Cambia el color a marrón */
+    text-decoration:none; /* Elimina la subrayado */
+  }
+  #enlace:hover{
+    color:  rgb(114, 74, 34);
+  }
 
 .transicao {
     color: white;
-    background: rgb(92, 46, 219);
+    background: rgb(139, 79, 19);
     border-radius: 0px 15px 15px 0px;
     width: 90%;
     text-align: center;
@@ -242,6 +312,14 @@ h5{
     color: white;
     background: transparent;
     margin-top: 10px;
+    
+}
+/* Btón registrate*/
+.signup:hover{
+    background: rgb(139, 79, 19);/* Cambia el color al pasar el mouse */
+    color: white;
+    transform: scale(1.2); /* Escala el texto */
+
 }
 
 .quadrado-login {
@@ -280,9 +358,97 @@ h5{
         transform: translateX(0);
     }
 }
-/* -------------------- LOGIN -------------------- */
+
+/*RECUPERAR CONTRASEÑA*/
 
 
+  /* Estilos para el modal de recuperación de contraseña */
 
-
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 13px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
   
+  .modal-contenido {
+    background-color: #ffffff; /* Color crema para un estilo de pastelería */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #5d4c39; /* Marrón más oscuro para el borde */
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    
+
+  }
+  
+  .cerrar {
+    color: #5d4c39; /* Marrón oscuro */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cerrar:hover,
+  .cerrar:focus {
+    color: #8a7159; /* Un marrón más claro al interactuar con el botón */
+    text-decoration: none;
+  }
+  
+  /* Estilos específicos del contenido */
+  .cajaRecu {
+    margin-bottom: 15px;
+
+  }
+  
+  /* Estilos para las etiquetas */
+  h4 {
+    margin-bottom: 5px;
+    color: #5d4c39; /* Marrón oscuro para el título */
+    font-family: 'Pacifico'; /* 'Dancing Script' */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    font-weight: 300; /* Hace que la fuente sea más delgada */
+    display: flex; /* Espaciado del texto */
+    padding-left: 55px;
+  }
+  /* Estilos para los campos de texto */
+  #emailRecuperarModal[type='email'],
+  #contraRecuperarModal[type='password'],
+  #ContraConfiRecuperarModal[type='password'] {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #bca487; /* Marrón más claro para el borde del campo */
+    font-size: 16px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px; /* Ajuste del margen izquierdo */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #855822;
+  }
+  
+  button {
+    background-color: #8a7159; /* Un tono de marrón para un botón de aspecto terroso */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+  }
+  
+  button:hover {
+    background-color: #5d4c39; /* Oscurece el botón al interactuar */
+  }
