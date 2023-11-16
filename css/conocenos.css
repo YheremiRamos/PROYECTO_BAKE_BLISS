@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.img1 {
+   width: 1333px;
+   height: 150px;
+   overflow: hidden;
+   position: relative;
+   margin: 0px;
+}
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(233, 220, 220, 0.5);
+    pointer-events: none;
+}
+
+.img1 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    width: 50%;
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(82, 43, 17);
+}
+
+.logo1{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+}
+
+.imagen-con-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Puedes ajustar esto según el espacio que quieras entre la imagen y el texto */
+    max-width: 120%;
+    overflow: hidden;
+}
+
+.imagen-con-texto img {
+    width: 40%; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: auto;
+    display: block;
+}
+
+.imagen-con-texto p {
+    width: 50%; 
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px; 
+    margin: 0;
+    font-size: 1.3em; /* Ajusta el tamaño del texto según tus preferencias */
+    color: #633423; /* Cambia el color del texto según tus preferencias */
+    font-family: 'Open Sans';
+    text-align: justify;
+}
+.texto {
+    font-family: 'Open Sans';
+    text-align: center; /* Centrar el texto */
+    color: #633423; /* Agrega el color del texto según tus preferencias */
+    font-size: 1.8em;
+}
+.linea-amarilla {
+    display: inline-block;
+    border-bottom: 3px solid #f1b92b; /* Código de color para amarillo mostaza */
+    padding-bottom: 15px; /* Espacio entre el texto y la línea */
+    width: 20%;
+    font-weight: bold;
+}
+.img-servicios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px 0;
+}
+.img-servicios img {
+    width: 200px; 
+    height: auto;
+}
+.texto-servicios {
+    width: 33%;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    color: #633423;
+    font-family: 'Open Sans';
+}
+.text-left {
+    text-align: left;
+    margin: 10px;
+    display: flex;
+    display: block; 
+    width: 33%;
+    margin-left: 170px;
+    margin-right: 150px;
+    font-size: 1.8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    display: block;
+    width: 33%;
+    margin-left: 180px;
+    margin-right: 50px;
+    font-size: 1.8em;
+    color: #633423;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-right {
+    text-align: right;
+    margin: 10px;
+    display: flex;
+    display: block;
+    width: 33%;
+    margin-left: 215px;
+    margin-right: 10px;
+    font-size: 1.8em;
+    color: #633423;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.texto2 {
+    width: 33%;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    color: #633423;
+    font-family: 'Open Sans';
+}
