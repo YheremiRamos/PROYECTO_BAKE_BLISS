@@ -16,10 +16,8 @@ body {
 
 body {
 	background-image: linear-gradient(100deg, #000000c7, #00000020),
-        url('../img/Principal/login.jpg');
-
-
-	height: 60rem;
+        url('../img/Principal/fondo_login.avif');
+	height: 100ch;
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: left;
@@ -36,7 +34,7 @@ h5{
 
 .carrocel{
     width: 98%;
-    height: 100%;
+
     display: flex;
     align-items: center;
     overflow-x: scroll;
@@ -74,8 +72,7 @@ h5{
 
 /* -------------------- LOGIN -------------------- */
 .quadrado-login{
-  
-    margin-top: 8%;
+    margin-top: 10px;
     background: #d8bda2;
     border-radius: 15px;
     height: 30%;
@@ -236,7 +233,7 @@ h5{
     height: 30px;
     width: 50%;
     color: white;
-    transition: background-color 0.3s, transform 0.3s; /* Agregar la transición */
+    transition: background-color 0.1s, transform 0.3s; /* Agregar la transición */
 
 
 }
@@ -329,7 +326,7 @@ h5{
   
   /* Añade una clase al cuadro de inicio de sesión cuando el botón "Sign In" se presiona */
   .expandido {
-    width: 30%; /* Ancho completo para cubrir el formulario de registro */
+    width: 40%; /* Ancho completo para cubrir el formulario de registro */
   }
 
 
