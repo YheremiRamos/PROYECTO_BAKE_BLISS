@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/contacto.css">
+
+    <link rel="stylesheet" href="css/paginaPrincipal.css">
+    <link rel="stylesheet" href="css/util.css">
+
     <title>BAKE BLISS</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img  src="../PROYECTO_BAKE_BLISS/img/Principal/LOGO_1.png" alt="BakeBliss">
+
+	<header>
+        <div class="menu">
+            <!-- logo -->
+            <div class="logo">
+
+                <a href="./paginaPrincipal.html">
+                    <img src="./img/general/LOGO1.png" alt="">
+                </a>
+
+            </div>
+            <!-- SECCIONES -->
+            <div class="secciones">
+                <ul>
+                    <a href="tienda.html">Tienda</a>
+                    <a href="conocenos.html">Conócenos</a>
+                    <a href="contacto.html">Contacto</a>
+                </ul>
+            </div>
+            <!-- user -->
+            <div class="user">
+                <div class="user_img">
+                    <img src="./img/general/icon_user.png" alt="">
+                </div>
+
+                <div>
+                    <p>User</p>
+                </div>
+
+            </div>
+
         </div>
-        <div class="container-options">
-            <span>Tienda</span>
-            <span>Conócenos</span>
-            <span class="active">Contacto</a></span>
-        </div>
-        <div id="user">
-            <img src="../PROYECTO_BAKE_BLISS/img/Principal/LOGO_1.png" alt="User">
-            <p>User</p>
-        </div>
+
     </header>
+
     <main>
         <div id="section1">
             <div>
@@ -60,33 +85,75 @@
             <img src="../PROYECTO_BAKE_BLISS/img/general/contacto.png" alt="">
         </div>
     </main>
-    <footer>
-        <div id="info">
-            <div id="caja1">
-                <img class="info-logo" src="../PROYECTO_BAKE_BLISS/img/general/LOGO2.png" alt="Bakebliss">
-                <div class="info-libro">
-                    <img class="" src="../PROYECTO_BAKE_BLISS/img/general/img1.jpg" alt="">
-                    <p>Libro de reclamaciones</p>
-                </div>
-            </div>
-            <hr class="sep-footer">
-            <div id="caja2">
-                <div id="redes">
-                    <h5>Síguenos</h5>
+
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>WhatsApp</li>
+                        <li>
+                            Dirección: 71 Pennington Lane Vernon Rockville, CT
+                            06066
+                        </li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Fax: 55555300</li>
+                        <li>EmaiL: bakebliss@support.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="conocenos.html">Acerca de Nosotros</a></li>
+                        <li><a href="#">Información Delivery</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="contacto.html">Contactános</a></li>
                     </ul>
                 </div>
-                <div id="horario">
-                    <h5>Horario / Dirección</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus laboriosam magni nostrum quae nesciunt alias saepe reprehenderit molestiae.</p>
+
+                
+
+                <div class="newsletter">
+                    <p class="title-footer">Cotiza ya tu proximo pedido</p>
+
+                    <div class="content">
+                        <p>
+                            Cotiza algun producto que desees para tus fiestas, estaremos agradecidos
+                            de poder ayudar en el desarrollo de tu compra, muchas gracias por estar aqui.
+                        </p>
+                        <input type="email" placeholder="Ingresa el correo aquí...">
+                        <a href="pedido.html"><button>Cotizar</button></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="ubicacion">
-            <img src="../PROYECTO_BAKE_BLISS/img/general/img1.jpg" alt="Ubicación">
+
+            <div class="copyright">
+                <p>
+                    Desarrollado por estudiantes de Cibertec - Ciclo 4 &copy; 2023
+                </p>
+
+                <img src="img/Principal/payment.png" alt="Pagos">
+            </div>
         </div>
     </footer>
 </body>
