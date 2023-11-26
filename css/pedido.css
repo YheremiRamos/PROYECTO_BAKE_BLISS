@@ -6,7 +6,7 @@
 
 /* COLORES PARA LA PAGINA */
 :root {
-    --amarillo: #fa9112;
+    --amarillo: rgba(187, 163, 134, 0.816);
     --marron: #4d2f2c;
     --blanco: #fefeff;
 }
