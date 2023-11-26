@@ -3,12 +3,7 @@ body {
     background-color: #fefeff;
     width: 100%;
 }
-header {
-    display: flex;
-    padding: 1%;
-    width: 100%;
-    height: 100px;
-}
+
 .logo{
     width: 10%;
 }
